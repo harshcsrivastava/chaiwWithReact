@@ -41,6 +41,9 @@ function App() {
     window.navigator.clipboard.writeText(password)
     // NextJS me server side rendering hoti hai, vaha window keyword nhi krega
   }, [password])
+
+  // This hook is commonly used when you want to access or manipulate
+  //  DOM elements directly, without triggering a re-render of the component.
   return (
     <div className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 bg-gray-800 text-orange-500">
       <h1>Password Generator</h1>
